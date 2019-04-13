@@ -4,6 +4,7 @@ def task_3(text)
   strings = text.split("\n")
   strings.each do |st|
     next unless st.include?('Calling core with action')
+
     time.push(Time.parse(st))
   end
   if time.length == 2 then puts(time[1] - time[0]).to_f.to_s
