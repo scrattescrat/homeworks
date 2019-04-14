@@ -3,7 +3,7 @@ def task_1(text)
   strings2 = Array[]
 
   strings.each do |st|
-    if st.include?('error')
+    if st.downcase.include?('error')
       strings2.push(st + "\n")
     else strings2.push("\n")
     end
