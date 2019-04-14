@@ -1,6 +1,6 @@
 def task_3(_text)
   time = []
-  strings.each_line do |st|
+  text.each_line do |st|
     next unless st.include?('Calling core with action')
 
     time.push(Time.parse(st.chomp))
