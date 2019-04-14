@@ -1,12 +1,9 @@
 def task_1(text)
   strings = text.split("\n")
-  strings2 = Array[]
+  res = ''
 
   strings.each do |st|
-    if st.downcase.include?('error')
-      strings2.push(st + "\n")
-    else strings2.push("\n")
-    end
+    res = st if st.downcase.include?('error')
   end
-  strings2
+  res
 end

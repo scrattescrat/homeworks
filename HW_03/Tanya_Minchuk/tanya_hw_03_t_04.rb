@@ -4,5 +4,5 @@ def task_4(text)
   new.each do |i|
     sum += i.to_i
   end
-  puts sum
+  sum
 end
