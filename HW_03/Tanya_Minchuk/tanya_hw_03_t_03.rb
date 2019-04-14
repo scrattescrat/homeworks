@@ -5,7 +5,5 @@ def task_3(text)
 
     time.push(Time.parse(st.chomp))
   end
-  if time.length == 2 then puts(time[1] - time[0]).to_s
-  else puts '0'
-  end
+  time.length == 2 ? (time[1] - time[0]).to_s : '0'
 end
