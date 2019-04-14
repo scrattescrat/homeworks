@@ -1,4 +1,4 @@
-def task_3(_text)
+def task_3(text)
   time = []
   text.each_line do |st|
     next unless st.include?('Calling core with action')
