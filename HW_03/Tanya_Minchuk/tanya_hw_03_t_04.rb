@@ -1,7 +1,7 @@
 def task_4(text)
-  new = text.chars
+  text2 = text.chars
   sum = 0
-  new.each do |i|
+  text2.each do |i|
     sum += i.to_i
   end
   sum
