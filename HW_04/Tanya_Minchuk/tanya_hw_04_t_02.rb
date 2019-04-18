@@ -9,7 +9,7 @@ end
 def get_hash(value)
   res_hash = {}
   res_hash[:db] = value['database'] if value['database']
-  res_hash[:user] = value['username'] if value['user']
+  res_hash[:user] = value['username'] if value['username']
   res_hash[:password] = value['password'] if value['password']
   res_hash[:magic_number] = get_magic_number(value['pool'], value['timeout'])
   res_hash
