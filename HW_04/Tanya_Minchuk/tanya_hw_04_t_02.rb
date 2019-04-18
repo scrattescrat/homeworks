@@ -15,7 +15,7 @@ def get_hash(value)
   res_hash
 end
 
-def task_4(input)
+def task_4_2(input)
   return {} if input.empty?
 
   yaml_hash = YAML.safe_load(input)
