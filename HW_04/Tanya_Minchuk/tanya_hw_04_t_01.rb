@@ -8,5 +8,3 @@ def task_4_1(num)
   end
   puts fib.join(' ')
 end
-
-
