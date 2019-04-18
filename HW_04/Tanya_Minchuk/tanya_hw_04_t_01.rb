@@ -9,4 +9,3 @@ def task_4_1(num)
   end
   fib
 end
-puts task_4_1(1)
