@@ -2,11 +2,10 @@ require 'net/http'
 require 'uri'
 require 'json'
 
+# class Student
 class Student
-
   attr_reader :name, :notifications
   attr_writer :name, :notifications
-
 
   def initialize(name)
     @name          = name
@@ -23,7 +22,6 @@ class Student
                    'Content-Type' => 'application/json'
 
     @notifications <<
-        "Unread : Student #{name} sent #{@new_homework.hw_title}"
+      "Unread : Student #{name} sent #{@new_homework.hw_title}"
   end
-
 end

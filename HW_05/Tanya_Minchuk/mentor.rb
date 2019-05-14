@@ -1,5 +1,5 @@
+# class Mentor
 class Mentor
-
   attr_reader :name, :subscribtions
   attr_writer :name, :subscribtions
 
@@ -14,16 +14,15 @@ class Mentor
 
   def check_homework(homework)
     if homework.hw_solution.nil?
-      puts "Failed"
+      puts 'Failed'
     else
-      puts "Succeeded"
+      puts 'Succeeded'
     end
   end
 
   def read_notifications!(student, homework)
-    student.notifications.map! do |notif|
-      notif = "Read : Student #{student.name} sent #{homework.hw_title}"
+    student.notifications.map! do |_note|
+      _note = "Read : Student #{student.name} sent #{homework.hw_title}"
     end
-
   end
 end
