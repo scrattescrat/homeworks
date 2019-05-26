@@ -6,17 +6,19 @@ class Mentor
   def initialize(name)
     @name          = name
     @subscribtions = []
+    @result        = ''
   end
 
   def subscribe_to_student(student)
-    @subscribtions.push student
+    @subscribtions << student.name
+    @subscribtions << student.notifications
   end
 
   def check_homework(homework)
-    if homework.hw_solution.nil?
-      puts 'Failed'
+    if homework.hw_solution.empty?
+      p @result = 'Failed'
     else
-      puts 'Succeeded'
+      p @result = 'Succeeded'
     end
   end
 

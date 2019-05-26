@@ -9,6 +9,7 @@ mentor.subscribe_to_student student
 mentor.subscribtions
 
 hw = student.create_homework(hw_title: 'Hw_01', hw_solution: '12345')
+
 student.submit_homework
 
 mentor.read_notifications!(student, hw)
